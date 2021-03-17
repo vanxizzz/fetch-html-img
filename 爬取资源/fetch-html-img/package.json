@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "p-all": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "search-keywords": "^3.1.0"
+  },
+  "name": "fetch-html-img",
+  "version": "1.0.3",
+  "description": "fetch some imgs from html text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fetch-html-img"
+  ],
+  "author": {
+    "name": "vanxizzz",
+    "email": "1050132079@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanxizzz/fetch-html-img.git"
+  },
+  "license": "MIT"
+}
