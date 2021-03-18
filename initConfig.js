@@ -4,6 +4,9 @@ const obj = {
         type: "string",
         require: true,
     },
+    host: {
+        type:"string",
+    },
     targetAttr: {
         type: "string",
         defaultValue: "src"
