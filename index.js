@@ -28,7 +28,6 @@ module.exports = async function fetchImg(config) {
         return $(ele).attr(targetAttr)
     }).get();
     /* 过滤出不是http和https协议的 */
-    console.log(imgSrcs)
     imgSrcs = imgSrcs.filter(it => /http:\/\/.|https:\/\/.|^\/[^/]*|^\/\/./.test(it));
     imgSrcs = imgSrcs.map(it => {
         if (it.substr(0, 2) === "//") {
@@ -39,7 +38,6 @@ module.exports = async function fetchImg(config) {
             return it;
         }
     })
-    console.log(imgSrcs)
     /* 查找多少个 */
     if (sortRandom) {
         imgSrcs.sort(it => Math.random() - 0.5).sort(it => Math.random() - 0.5);
