@@ -48,7 +48,7 @@ fetchImg({
     selector: ".imgitem .main_img",
     saveDir: path.resolve(__dirname, "./qq"),
     imgNum: 5,
-    sortRandom: true,
+    sortRandom: false,
     setImgName: function(imgUrl , index){
         /* imgUrl是请求的图片名，如：http://xxx/aaa.jpg
             index是图片索引
