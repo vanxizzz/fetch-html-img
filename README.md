@@ -16,8 +16,8 @@
 | htmlStr | String|是🐢 |   | 页面的html文本 |\<html>...\</html>|
 | selector | String|是🐢 |   | 目标图片的css选择器 |".wrapper img"|
 | saveDir | String|是🐢 |   | 保存图片的目录，需要传绝对路径 |path.resolve(__dirname , "./imgDir")|
+| host | String|是🐢 |   | 抓取网站的地址(为了防止有些图片的src没有http字符串的情况) |"https://baidu.com"|
 | setImgName | Function|否⭕ |  默认是随机10个字符 | 设置生成的图片名称模板 |函数返回值就是生成的图片名称|
-| host | String|否⭕ |   | 抓取网站的域名(为了防止有些图片没有域名的情况) |"https://baidu.com"|
 | imgNum | Number|否⭕ | 9999 | 抓取的图片数量||
 | sortRandom | Boolean|否⭕ | false | 是否乱序抓取页面上的图片 |
 
@@ -47,6 +47,7 @@ fetchImg({
     htmlStr: res,//html文本
     selector: ".imgitem .main_img",
     saveDir: path.resolve(__dirname, "./qq"),
+    host: "https://www.baidu.com",
     imgNum: 5,
     sortRandom: false,
     setImgName: function(imgUrl , index){

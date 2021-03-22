@@ -9,7 +9,7 @@
     "search-keywords": "^3.1.0"
   },
   "name": "fetch-html-img",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "fetch some imgs from html text",
   "main": "index.js",
   "scripts": {

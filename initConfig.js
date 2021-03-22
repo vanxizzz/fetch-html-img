@@ -6,6 +6,7 @@ const obj = {
     },
     host: {
         type:"string",
+        require: true
     },
     targetAttr: {
         type: "string",
@@ -52,8 +53,9 @@ module.exports = (config) => {
         if (require && config[configName] == null) {
             throw Error(`${configName}参数必传`)
         }
-        if (defaultValue && config[configName] == null) {
+        if (defaultValue != null && config[configName] == null) {
             config[configName] = defaultValue;
+            continue;
         }
         if (typeof config[configName] !== type) {
             throw Error(`${configName}类型错误`)
