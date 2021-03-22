@@ -2,6 +2,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.5",
+    "colors": "^1.4.0",
     "p-all": "^3.0.0"
   },
   "devDependencies": {
@@ -9,7 +10,7 @@
     "search-keywords": "^3.1.0"
   },
   "name": "fetch-html-img",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "fetch some imgs from html text",
   "main": "index.js",
   "scripts": {
